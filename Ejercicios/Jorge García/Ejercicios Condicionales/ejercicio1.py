@@ -1,6 +1,3 @@
-from plistlib import InvalidFileException
-
-
 edad = int(input("Ingresa tu edad: "))
 edadMayor = 18
 if (edad >= edadMayor):
