@@ -35,7 +35,7 @@ precioMenor= "5€"
 precioInfantil= "Gratis"
 
 edad= int(input("Ingrese su edad: "))      # int : numero entero
-if (edad>cond)
+if (edad>cond):
     print("El precio para la sala de juegos es de:", precioMayor)
 else:
     if (edad>=cond2):
