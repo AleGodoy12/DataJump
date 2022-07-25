@@ -12,7 +12,7 @@ Las **lineas fisicas** son lineas que terminan con un caracter de fin de linea, 
 
 > print('esto es una linea fisica')
 
-Una linea fisica terminaria al apretar enter, una **linea logica** en cambio puede estar formada por muchas lineas fisicas. Se pueden unir lineas fisicas para formar una linea logica de la siguiente manera:
+Una linea fisica terminaria al apretar enter, una **linea logica** en cambio puede estar formada por muchas lineas fisicas. Se pueden unir lineas fisicas para formar una linea logica de la siguiente manera:  
 
 ```
 print('esto en cambio \
