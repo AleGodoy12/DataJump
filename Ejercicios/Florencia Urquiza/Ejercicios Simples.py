@@ -29,5 +29,3 @@ ventaDia= float(input ("Ingrese numero de barras de pan viejo vendidas: "))
 print ("El precio habitual de una barra de pan es de: €", barra_pan, ". Por no ser fresca se le hace el descuento del 60% que seria de: €", barra_viejaDesc,
       ". El precio total por barra vieja será: €",barra_pan-barra_viejaDesc,". La venta de hoy fue : €",barra_vieja*ventaDia)
 
-
-# *Ejercicios Condicionales*
