@@ -1,6 +1,8 @@
-clave = "Pepe123"
+clave = "pepe123"
+clave = clave.lower()
 claveIngresada = input("Ingresa la contraseña: ")
-if(clave == claveIngresada):
+#- Uso el lower para evaluar las contraseñas en minúsculas.
+if(clave == claveIngresada.lower()):
     print("¡Clave correcta!")
 else:
-    print("Clave incorrecta.")
+    print("Clave incorrecta. Inténtalo de nuevo más tarde.")
