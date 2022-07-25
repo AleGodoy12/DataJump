@@ -22,17 +22,15 @@ for i in range(1,11):
     print(num , '*' , i , "=" , (num*i))
 
 
-#4  Escribir un programa que almacene la cadena de caracteres contraseña en una variable, 
-# pregunte al usuario por la contraseña hasta que introduzca la contraseña correcta.
-
+#4
 contraseña = "queso"
 i = 0
+usuario = input('Contraseña')
 while(i<5):
-    usuario = input('Contraseña')
     if(contraseña != usuario):
-        input('Intentá nuevamente')
+        print('Intenta nuevamente')
+        input('Contraseña')
     i+=1
-    print('No hay más intentos')
 
 #5 Escribir un programa en el que se pregunte al usuario por una frase y una letra, y 
 # muestre por pantalla el número de veces que aparece la letra en la frase
