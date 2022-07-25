@@ -1,6 +1,6 @@
 from random import *
 def generaNumeroAleatorio(minimo, maximo):
-return randint(minimo, maximo)
+    return randint(minimo, maximo)
 numero_buscado=generaNumeroAleatorio(1,100)
 encontrado=False
 intentos=0
