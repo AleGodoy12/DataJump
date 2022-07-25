@@ -32,16 +32,16 @@ while(i<5):
         input('Contraseña')
     i+=1
 
-#5 Escribir un programa en el que se pregunte al usuario por una frase y una letra, y 
-# muestre por pantalla el número de veces que aparece la letra en la frase
+#5
 frase = input('Decime una frase')
 letra = input('Decime una letra')
 
-
-
-
-
-
-
-print("en la frase que ingresaste hay" , numLetras, letra, ".")
+i=0
+array = []
+for L in frase:
+    if (letra == L):
+        array.append(L)
+        letrasTotales = len(array)
+    i+=1
+print (letrasTotales)
 

@@ -27,18 +27,11 @@ while (multiplicador<10):
 # 4.- Escribir un programa que almacene la cadena de caracteres contraseña en una variable, pregunte al usuario por la contraseña hasta que introduzca la contraseña correcta.
 
 clave= "Hola123"
-contraseña= input("¿Cuál es su contraseña? ")
-    if(clave == contraseña).lower():
-        print("Contraseña correcta ")                #no me funciona
-    else:
-        print("Contraseña incorrecta ") 
-
-
-clave= "Hola123"                                     # me funciona
-contraseña =""                          
-while contraseña != clave:
-    contraseña = input("Ingrese la contraseña: ")         
-print("Contraseña correcta")
+contraseña= input("¿Cuál es su contraseña? ").capitalize()   # deja la mayuscula como esta
+if(clave == contraseña):
+    print("Contraseña correcta ")                
+else:
+    print("Contraseña incorrecta ")  
 
 
 # 5.- Escribir un programa en el que se pregunte al usuario por una frase y una letra, y muestre por pantalla el número de veces que aparece la letra en la frase

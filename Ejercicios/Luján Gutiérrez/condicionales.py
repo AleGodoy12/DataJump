@@ -9,8 +9,8 @@ else:
 
 
 #2
-contraseña = input('Contraseña por favor')
-if (contraseña == "CHEESE" or contraseña == "cheese"):
+contraseña = input('Contraseña por favor').upper()
+if (contraseña == "CHEESE"):
     print (True)
 else:
     print(False)
@@ -37,8 +37,8 @@ else:
 #5
 mujeres = ("A","B","C","D","E","F","G","H","I","J","K","L","M")
 hombres = ("N","Ñ","O","P","Q","R","S","T","U","V","W","X","Y","Z")
-nombre = input('Decime tu nombre')
-genero = input('Decime tu género - F/M/OTRO')
+nombre = input('Decime tu nombre').capitalize()
+genero = input('Decime tu género - F/M/OTRO').capitalize()
 
 if ((nombre.startswith(mujeres) and genero == "F") or (nombre.startswith(hombres) and genero == "M")):
     print ('Sos del grupo A')
