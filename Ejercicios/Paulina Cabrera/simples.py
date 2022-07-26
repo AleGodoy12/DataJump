@@ -34,15 +34,16 @@ print("Su índice de masa corporal es: ", str(imc))
 
 #5.- Una panadería vende barras de pan a 3.49€ cada una. El pan que no es el día tiene un descuento del 60%. Escribir un programa que comience leyendo el número de barras vendidas que no son del día. Después el programa debe mostrar el precio habitual de una barra de pan, el descuento que se le hace por no ser fresca y el coste final total
 
-cantidad= int(input("Ingrese la cantidad de pan no de dia vendido: "))
+panVendido = int(input("Ingrese la cantidad de pan que no era del dia vendido: "))
 
-precioPan = 3.49
-panNoDia = (3.49 * 60) / 100
-print(f"El pan que no es del dia tiene un valor de: ", str(panNoDia) )
+valorNormal = 3.49
 
-total = cantidad * precioPan
+print("El valor del pan del dia es de ", str(valorNormal), "$")
 
-descuento = total * 60 / 100
+descuento = valorNormal * 60 / 100
 
-print()
-print("El total a pagar es de " + str(descuento)+ "€")
+print("El descuento por unidad del pan que no es del día es de: ", str(descuento), "$")
+
+total = panVendido * descuento
+
+print("El total del pan comprado es de: ", str(round(total))) 
