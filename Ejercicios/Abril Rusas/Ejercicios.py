@@ -23,9 +23,10 @@ print("Su indice de masa corporal es: ", aprox)
 #5.- Una panadería vende barras de pan a 3.49€ cada una. El pan que no es el día tiene un descuento del 60%. Escribir un programa que comience leyendo el número de barras vendidas que no son del día. Después el programa debe mostrar el precio habitual de una barra de pan, el descuento que se le hace por no ser fresca y el coste final total.
 barrasDePan = 3.49
 cant=int(input("Ingrese cuantas barras NO frescas se vendieron el dia de la fecha "))
-precio = cant*barrasDePan
-precioConDesc= precio*60/100
-aprox= round(precioConDesc, 2)
+precioInicial = cant*barrasDePan
+desc= precioInicial*60/100
+precioFinal=precioInicial - desc
+aprox= round(precioFinal, 2)
 print("Barras de pan x ", cant )
 print("Precio de barra de pan = ", barrasDePan,"€")
 print("Descuento del 60%")
@@ -77,7 +78,7 @@ else:
 abecedario = ["a", "b", "c" , "d" , "e" , "f", "g" , "h", "i", "j", "k", "l", "m", "n", "ñ", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
 
 primeraParte= abecedario[:12]
-segundaParte= abecedario[12:26]
+segundaParte= abecedario[12:]
 
 sexo=str(input("Ingrese su sexo biologico (mujer u hombre) ")).lower()
 nombre=str(input("Ingrese su nombre ")).lower()
@@ -103,7 +104,7 @@ print( )
 num=int(input("Ingrese un numero: "))
 i=1
 while (i<=num):
-    print(i)
+    print(i, end = ", ")
     i+=2
 
 #3.- Escribir un programa que muestre por pantalla la tabla de multiplicar del 1 al 10.
@@ -133,9 +134,7 @@ from collections import Counter
 frase=str(input("Escriba una frase: "))
 letra=str(input("Escriba una letra: "))
 counter= Counter(frase)
-print(counter[letra])
-
-
+print("la letra ", letra, "aparece", counter[letra], "veces")
 
 
 
