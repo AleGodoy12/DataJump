@@ -3,29 +3,26 @@ from numbers import Real
 #1.- Escribir un programa que muestre por pantalla la cadena ¡Hola Mundo!.
 print('Hola mundo!')
 
+
 #2.- Escribir un programa que almacene la cadena ¡Hola Mundo! en una variable y luego muestre por pantalla el contenido de la variable.
 saludo="Hola mundo!"
 print(saludo)
 
+
 #3.- Escribir un programa que pregunte al usuario por el número de horas trabajadas y el coste por hora. Después debe mostrar por pantalla la paga que le corresponde
 
-def sueldo(horas,paga):
-    horas=int(input("Cuantas horas trabajas?"))
-    paga=int(input("Cuánto te pagan por hora?"))
+horas=int(input("Cuantas horas trabajas?"))
+paga=int(input("Cuánto te pagan por hora?"))
+
+def sueldo(horas,paga):   
     total=horas*paga
-    print("Si trabajas",horas,"cobras",total)
-print(sueldo(0,0))
-
-#horas=int(input("Cuantas horas trabajas?"))
-#paga=int(input("Cuánto te pagan por hora?"))
-#total= horas*paga
-
-#print("Si trabajas ",horas,"hs te van a pagar $",total)
+    print("Si trabajas",horas,"hs cobrarás $",total)
+sueldo(horas,paga)
 
 
 #4.- Escribir un programa que pida al usuario su peso (en kg) y estatura (en metros), calcule el índice de masa corporal y lo almacene en una variable, y muestre por pantalla la frase Tu índice de masa corporal es <imc> donde <imc> es el índice de masa corporal calculado redondeado con dos decimales
-pesoU= float(input("Cuanto pesas?"))
-estatura= float(input("Cuanto medis?"))
+pesoU= float(input("Cuanto pesas? (Ingresa el valor en kg por favor)"))
+estatura= float(input("Cuanto medis?(Ingresa el valor en mts por favor)"))
 imc= pesoU/ estatura**2
 print("Tu índice de masa corporal es:",round(imc,2))
 
