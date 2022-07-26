@@ -47,3 +47,20 @@ else:
     print("Hola, debe pagar 10€") """
 
 # 5.- Los alumnos de un curso se han dividido en dos grupos A y B de acuerdo al sexo y el nombre. El grupo A esta formado por las mujeres con un nombre anterior a la M y los hombres con un nombre posterior a la N y el grupo B por el resto. Escribir un programa que pregunte al usuario su nombre y sexo, y muestre por pantalla el grupo que le corresponde.
+
+""" nombre= input("Ingrese su nombre: ").capitalize()        
+genero= input("Ingrese su sexo, si es masculono M, si es femenino F: ").upper()
+
+if genero == "F":                        
+    if nombre < "M":                     
+        grupo= "A"                               
+    else:
+        grupo= "B"                               
+else:
+    if nombre > "N":                       
+        grupo= "A"
+    else:
+        grupo= "B"                               
+print("Te corresponde el grupo: " + grupo) """
+
+

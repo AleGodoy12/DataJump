@@ -10,18 +10,16 @@ for i in range(10):
 # 2.- Escribir un programa que pida al usuario un número entero positivo y muestre por pantalla todos los números impares desde 1 hasta ese número separados por comas.
 
 """ numero = int (input("Ingrese un número: "))
-numeroInicio = 0
 contadorImpares = []
 
 for i in range (1, numero, 1):
 
-    if numero % 2 == 0:
-        numeroInicio += 1
-        print (numeroInicio)
+  if i % 2 != 0:
+    contadorImpares.append(i)
+
+print (contadorImpares) """
     
-    else: 
-        print(numeroInicio) """
-    
+
 
     
 # 3.- Escribir un programa que muestre por pantalla la tabla de multiplicar del 1 al 10
