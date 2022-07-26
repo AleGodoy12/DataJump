@@ -28,3 +28,5 @@ letra = str(input("Ingrese una letra")).casefold()
 for coincidencia in frase:
     contador = frase.count(letra)
 print(contador)
+
+#10/10

@@ -20,4 +20,6 @@ for L in frase:
        letrasTotales = len(array)
     i += 1
 print(letrasTotales) 
+
+#8/10 letrasTotales no se muestra definido. Lo vemos.
     

@@ -24,3 +24,7 @@ for i in frase:
     if(i==letra):
         cant+=1
 print("La letra ", letra, "aparece ", cant, " veces")
+
+
+
+#10/10

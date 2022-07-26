@@ -24,3 +24,5 @@ for letra in frase:
     if(letra == letraBuscada):
         contador += 1
 print("Cantidad de veces que aparece la letra '" + letraBuscada + "' en la frase '" + frase + "': " + str(contador))
+
+#10/10

@@ -27,3 +27,6 @@ while contador_misma_letra < frase.count(letra):
       contador_misma_letra += 1
 
 print(contador_misma_letra)
+
+
+#10/10
