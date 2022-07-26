@@ -9,7 +9,7 @@ else :
      
      
 #2.- Escribir un programa que almacene la cadena de caracteres contraseña en una variable, pregunte al usuario por la contraseña e imprima por pantalla si la contraseña introducida por el usuario coincide con la guardada en la variable sin tener en cuenta mayúsculas y minúsculas.     
-uno= input("Ingrese la contraseña")
+uno= input("Ingrese la contraseña: ")
 clave= "contraseña"
 
 if (uno == clave):
@@ -35,7 +35,7 @@ else :
     (edades >= 18 )
     print ("Debe pagar €10") 
     
-5.- Los alumnos de un curso se han dividido en dos grupos A y B de acuerdo al sexo y el nombre. El grupo A esta formado por las mujeres con un nombre anterior a la M y los hombres con un nombre posterior a la N y el grupo B por el resto. Escribir un programa que pregunte al usuario su nombre y sexo, y muestre por pantalla el grupo que le corresponde.
+#5.- Los alumnos de un curso se han dividido en dos grupos A y B de acuerdo al sexo y el nombre. El grupo A esta formado por las mujeres con un nombre anterior a la M y los hombres con un nombre posterior a la N y el grupo B por el resto. Escribir un programa que pregunte al usuario su nombre y sexo, y muestre por pantalla el grupo que le corresponde.
 nombre= input("Ingrese su nombre en MAYUSCULA: ")
 sexo= input("Ingrese F o M, segun corresponda")
 
