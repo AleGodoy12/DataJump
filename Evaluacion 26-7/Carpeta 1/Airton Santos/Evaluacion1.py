@@ -9,3 +9,22 @@
 #1.- Escribir un programa en el que se pregunte al usuario por una frase y una letra, y muestre por pantalla 
 # el número de veces que aparece la letra en la frase
 
+# Ejercicios Condicionales 
+
+edad = int(input("Ingrese su edad"))
+
+if edad < 4:
+    print("Entra gratis")
+elif edad >= 4 and edad < 18:
+    print("Debe pegar 5€")
+else:
+    print("Debe pagar 10€")
+
+# Ejercicios bucles
+
+frase = str(input("Ingrese una frase")).casefold()
+letra = str(input("Ingrese una letra")).casefold()
+
+for coincidencia in frase:
+    contador = frase.count(letra)
+print(contador)
