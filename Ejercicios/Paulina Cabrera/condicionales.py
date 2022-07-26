@@ -45,15 +45,17 @@ if(edadCliente > 18):
 
 abc = ("a","b","c","d","e","f","g","h","i","j","k","l","m","n","ñ","o","p","q","r","s","t","u","v","w","x","y","z")
 
-grupoUno= abc[:13]
-grupoDos= abc[13:26]
+grupoUno= abc[:12]
+grupoDos= abc[12:26]
 
 nombre = (input("Ingrese su nombre: ")).lower()        #Lower convierte mayuscula en minuscula
-sexo = (input("Ingrese su sexo (Femenino/Masculino): ")).lower()
+sexo = (input("Ingrese su sexo (femenino/masculino): ")).lower()
 
-inicial = nombre[1] 
+inicial = nombre[0] 
 
-if(sexo == "Femenino" and inicial in grupoUno or sexo == "Masculino" and inicial in grupoDos):
+if(sexo == "femenino" and inicial in grupoUno or sexo == "masculino" and inicial in grupoDos):
      print("Bienvenida al grupo A")
 else:
     print("Bienvenida al grupo B")
+    
+

@@ -1,14 +1,14 @@
 #BUCLES
 
-#1.- Escribir un programa que pregunte al usuario su edad y muestre por pantalla si es mayor de edad o no.
+##1.- Escribir un programa que pida al usuario una palabra y la muestre por pantalla 10 veces.
 
-edad = int(input("Ingrese su edad: "))   
+palabra = input("Ingresa una palabra cualquiera: ")
 
-if(edad > 18):
-    print("Sos mayor de edad")
-else:
-    print("Sos menor de edad")
-    
+i = 0
+while(i < 10):
+    print(palabra)
+    i += 1
+
 #2.- Escribir un programa que pida al usuario un número entero positivo y muestre por pantalla todos los números impares desde 1 hasta ese número separados por comas.
 
 numeroEntero = int(input("Ingrese un número entero que sea positivo: "))
