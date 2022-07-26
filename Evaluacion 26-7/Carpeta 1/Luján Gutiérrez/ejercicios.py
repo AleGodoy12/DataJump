@@ -15,9 +15,9 @@ i = 0
 array = []
 
 for L in frase:
- if (L == letra):
+    if (L == letra):
+       array.append(L)
+       letrasTotales = len(array)
     i += 1
-    array.append(L)
-    letrasTotales = len(array)
-print(letrasTotales)
+print(letrasTotales) 
     
