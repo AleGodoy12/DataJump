@@ -26,7 +26,7 @@ for i in range (1, 11):
 #     por la contraseña hasta que introduzca la contraseña correcta.
 
 passwordC = str (input("Ingrese su contraseña: "))
-passwordcorrect = "EDELP"
+passwordcorrect = "arusta744"
 while (passwordC != passwordcorrect):
     print ("contraseña erronea ")
     passwordC = str (input("Introduzca su contraseña: "))
