@@ -88,9 +88,9 @@
 #    print(word)
 
 #2.-
-#n = int(input("Introduce un número entero positivo: "))
-#for i in range(1, n+1, 2):
-#    print(i, end=", ")
+n = int(input("Introduce un número entero positivo: "))
+for i in range(1, n+1, 2):
+    print(i, end=", ")
 
 #3.-
 #for i in range(1, 11):
