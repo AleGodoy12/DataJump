@@ -6,7 +6,7 @@
 nombre = input("Nombre: ").capitalize() #Para que la primera letra quede en mayúscula
 sexo = input("Sexo [M o F]: ").upper()
 
-if(nombre.isalpha and (sexo == "M" or sexo == "F")):
+if(nombre.isalpha() and (sexo == "M" or sexo == "F")):
     primeraLetra = nombre[0]
     if(sexo == "F"):
         if(primeraLetra < "M"):
