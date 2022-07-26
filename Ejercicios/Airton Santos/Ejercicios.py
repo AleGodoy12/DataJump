@@ -118,11 +118,12 @@ while x < 10:
 
 valor = int (input("Ingrese un número positivo"))
 i = 0
-
+arr = []
 while i < valor:
-        i+= 1 
+        i+= 1
         if(i % 2 != 0):
-            print(i)
+            arr.append(i)
+print(arr)
 
 
 #3.Tabla de multiplicar del 1 al 10
@@ -144,8 +145,8 @@ while contraseña != ingreseContraseña:
 else:
     print("Bienvenidx")
 
-
 #5. Contabilizador de letras
+
 frase = str(input("Ingrese una frase"))
 letra = str(input("Ingrese una letra"))
 acumulador = 0

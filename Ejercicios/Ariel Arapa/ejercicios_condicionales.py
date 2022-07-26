@@ -39,47 +39,16 @@ ABECEDARIO = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "
 primeraParte = ABECEDARIO[:13]
 segundaParte = ABECEDARIO[13:27]
 
-grupoA = []
-grupoB = []
-
-i = 0
-a = 0
-
 sexo = input("Ingrese su sexo: (masculino / femenino) -> ").lower()
 nombre = input("Ingrese tu nombre: ").lower()
 primerLetra = nombre[0]
 
 validacion = primerLetra in primeraParte
 validacion2 = primerLetra in segundaParte
-print(validacion)
+
 
 if (sexo == "femenino" and validacion or sexo == "masculino" and validacion2):
-    grupoA.append(nombre)
+    print("Estas en el grupo A")
 else:
-    grupoB.append(nombre)
+    print("Estas en el grupo B")
 
-print(f"En el grupo A están: {grupoA} y en el grupo B están: {grupoB}")
-
-# if(sexo == "masculino" and validacion2):
-#     grupoA.append(nombre)
-# else:
-#     grupoB.append(nombre)
-
-# if(sexo == "femenino"):
-#     while(i < len(primeraParte)):
-#         if(primeraParte[i] == primerLetra):
-#             grupoA.append(nombre)
-#     i += 1
-#     grupoB.append(nombre)
-
-# elif(sexo == "masculino"):
-#     while(a < len(segundaParte)):
-#         if(segundaParte[a] == primerLetra):
-#             grupoA.append(nombre)
-#         a += 1
-#     grupoB.append(nombre)
-# else:
-#     print("sexo mal escrito!")
-
-#El grupo A estan: ['zamuel'] y en el grupo B estan: ['zamuel'] sale eso al seleccionar masculino, zamuel
-#falta corregir
