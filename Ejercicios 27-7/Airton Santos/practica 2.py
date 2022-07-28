@@ -39,7 +39,7 @@ def gananciasCapital ():
     interes = float(input("Qué interés anual desea?"))
     agnos = int(input("Por cuántos años desea hacer la inversión?"))
 
-    gananciaAnual = (inversion * (interes/100)) + (inversion / agnos)
+    gananciaAnual = (inversion * (interes/100)) + inversion
     print(gananciaAnual)
 
 
