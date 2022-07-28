@@ -13,8 +13,8 @@ def calcularVolumenCilindro(radio, altura):
     return volumen
 
 radio = 9
-areaCirculo = calcularAreaCirculo(9)
+areaCirculo = calcularAreaCirculo(radio)
 altura = 14
 volumenCilindro = calcularVolumenCilindro(radio, altura)
 print(f"El área del circulo es: {areaCirculo}")
-print(f"El volumen del circulo es: {volumenCilindro}")
+print(f"El volumen del cilindro es: {volumenCilindro}")
