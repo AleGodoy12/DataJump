@@ -12,8 +12,9 @@ tiempo = int(input("Ingresa los años que durará la inversión: "))
 
 if(int(inversion) > 0 and int(tasaInteres) > 0 and int(tasaInteres) <= 100 and tiempo > 0):
     tasaInteres = tasaInteres / 100
+    print(tasaInteres)
     for anio in range(0, tiempo):
-        ganancia = round(inversion * tasaInteres * 12, 2)
+        ganancia = round(inversion * tasaInteres, 2)
         capital = inversion + ganancia
         print(f"\nAño {anio+1} - Capital total obtenido: {capital}$ - Ganancia: {ganancia}$ - Inversión: {inversion}$")
         inversion = capital
