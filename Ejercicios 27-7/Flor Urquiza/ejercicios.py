@@ -47,10 +47,10 @@ else :
 #6.- Escribir un programa que muestre todo lo que el usuario introduzca 
 #hasta que el usuario escriba “salir” que terminará.
 
-palabra= input("Escriba una palabra, hasta hallar la correcta")
+palabra= input("Escriba una palabra, hasta hallar la correcta: ")
 palabraCorrecta= "salir"
 
 while palabra != palabraCorrecta :
-    palabra= input("Escriba una palabra, hasta hallar la correcta")
+    palabra= input("Escriba una palabra, hasta hallar la correcta: ")
     
     
