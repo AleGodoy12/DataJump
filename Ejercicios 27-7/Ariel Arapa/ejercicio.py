@@ -101,25 +101,25 @@
 
 
 # 9.- Escribir una función que reciba una muestra de números en una lista y devuelva su media.
-# salir = True
-# lista = []
-# while salir:
-#     numero = int(input("Ingrese un numero: "))
-#     if(numero == 0):
-#         salir = False
-#     elif(numero != 0):
-#         lista.append(numero)
+salir = True
+lista = []
+while salir:
+    numero = int(input("Ingrese un numero: "))
+    if(numero == 0):
+        salir = False
+    elif(numero != 0):
+        lista.append(numero)
 
-# def media(listaNum):
-#     suma, a = 0, 0
-#     for x in listaNum:
-#         suma += x
-#         a += 1
-#     promedio = suma / a
-#     return promedio
+def media(listaNum):
+    suma, a = 0, 0
+    for x in listaNum:
+        suma += x
+        a += 1
+    promedio = suma / a
+    return promedio
 
-# media1 = media(lista)
-# print(f"El promedio de la lista: {lista} es igual a {media1:.2f}")
+media1 = media(lista)
+print(f"El promedio de la lista: {lista} es igual a {media1:.2f}")
     
 
 
