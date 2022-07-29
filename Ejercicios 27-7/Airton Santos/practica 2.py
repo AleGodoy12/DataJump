@@ -38,13 +38,18 @@ def gananciasCapital ():
     inversion = int(input("Ingrese cuánto quiere invertir"))
     interes = float(input("Qué interés anual desea?"))
     agnos = int(input("Por cuántos años desea hacer la inversión?"))
+    i = 0 
+    gananciaAnual = 0 
 
-    gananciaAnual = (inversion * (interes/100)) + inversion
-    print(gananciaAnual)
+    while i < agnos:
+        gananciasFormula = (inversion * (interes/100)) + inversion
+        gananciaAnual += gananciasFormula
+        i += 1
+
+        print("La ganancia del año ", i, "es ",gananciaAnual)
 
 
 gananciasCapital()
-
 
 
 #4.- Escribir un programa que pida al usuario un número entero y muestre por pantalla si es un número primo o no.
