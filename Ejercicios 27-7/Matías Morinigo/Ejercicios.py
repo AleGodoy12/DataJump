@@ -97,7 +97,7 @@ print(tam)
 
 # 8  Escribir una función que reciba un número entero positivo y devuelva su factorial
 numPosi = int(input("Escriba un numero entero positivo: "))
-from math import factorial
+from math import factorial                         
 def num(numPosi):
     rando = "La factorial es: ", factorial(numPosi)
     return rando
@@ -121,7 +121,7 @@ def promedio(lista):
      san += num
     return san/i
 namber = promedio(lista)
-print(namber)
+print(namber) 
 
 
 # 10  Escribir una función que muestre por pantalla el saludo ¡Hola amiga! cada vez que se la invoque.
