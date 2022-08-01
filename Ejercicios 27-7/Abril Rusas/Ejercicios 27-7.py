@@ -8,7 +8,7 @@ while(cumple<edad):
 # 2.- Escribir un programa que pida al usuario un número entero positivo y muestre por pantalla la cuenta atrás desde ese número hasta cero separados por comas
 num=int(input("Ingrese un numero entero positivo: "))
 regresiva=num
-while(regresiva>0):
+while(regresiva>=0):
     print(regresiva, end = ", ")
     regresiva-=1
                                         
@@ -28,7 +28,7 @@ numero=int(input("Ingrese un numero entero: "))
 
 contador=0
 
-for i in range(2,numero):
+for i in range(2,numero):  
     resto=numero%i
     if (resto==0):
         contador +=1
@@ -84,9 +84,9 @@ def media(array):
     suma=0
     for i in array:
         suma+=i
-    media=cant/suma
+    media=suma/cant
     return media
-        
+    
 
 # 10.- Escribir una función que muestre por pantalla el saludo ¡Hola amiga! cada vez que se la invoque.
 
