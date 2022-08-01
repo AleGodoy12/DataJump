@@ -25,7 +25,7 @@ while (x >= 0):
 colores = ["Rojo", "Azul", "Verde", "Blanco"]
 
 for i in colores:
-    print("El color es: ", colores, ".") 
+    print("El color es: ", i, ".") 
 
 #5.- Crea un bucle for con un range() que vaya desde el valor 7 hasta el valor 700 en saltos de 100. Basta con que imprimas el valor de cada iteración.
 
