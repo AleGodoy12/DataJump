@@ -1,11 +1,11 @@
 #1.-Escribir un programa que almacene la cadena de caracteres contraseña en una variable, pregunte al usuario por la contraseña e imprima por pantalla si la contraseña introducida por el usuario coincide con la 
 # guardada en la variable sin tener en cuenta mayúsculas y minúsculas.
 
-clave= "contraseña"
-lam= input("Escriba su contraseña: ")
+# clave= "contraseña"
+# lam= input("Escriba su contraseña: ")
 
-if (lam == clave.lower):
-    print ("Coincide")
+# if (lam == clave.lower):
+#     print ("Coincide")
  
  
  #1.- Escribir un programa en el que se pregunte al usuario por una frase y una letra, y muestre por pantalla 
