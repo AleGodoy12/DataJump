@@ -69,7 +69,10 @@ for materia in asignaturas:
     print("Yo estudio: " + materia)
     
 #2. Escribir un programa que pregunte al usuario los números ganadores de la lotería primitiva, los almacene en una lista y los muestre por pantalla ordenados de menor a mayor.
-ganador=int(input("Ingrese los 6 numeros ganadores: "))
+ganador=input("Ingrese los 6 numeros ganadores con un espacio de por medio: ")
+list=ganador.split()
+list.sort
+print(list)
 
 #3. Escribir un programa que almacene en una lista los siguientes precios, 50, 75, 46, 22, 80, 65, 8, y muestre por pantalla el menor y el mayor de los precios.
 precios=[50, 75, 46, 22, 80, 65, 8]
