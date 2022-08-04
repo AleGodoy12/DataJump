@@ -13,7 +13,31 @@ def incremento (numero):
         numero += 5
 
 
-print(incremento(x)) """
+incremento(x) """
+
+                                       
+                                       
+                                       
+                                       
+                                       
+                                       # A tener en cuenta 
+
+""" def incremento ():          
+    
+    x = 0
+
+    numeroLimite = 15
+
+    while x <= numeroLimite:
+
+        print (x)
+
+        x += 5
+          
+
+print(incremento()) """                """ NO NECESITO VOLVER HACER PRINT PORQUE ADENTRO DE LA FUNCIÓN porque YA LO EJECUTÉ. 
+                                            DE LO CONTRARIO ME IMPRIMIRÁ "NONE" como en este caso. Imprime al final NONE """
+
 
 
 
@@ -31,7 +55,7 @@ def decremento (numero):
 
         numero -= 20
     
-print(decremento(x)) """
+decremento(x) """
 
 
 
@@ -50,7 +74,7 @@ def decremento (numero):
 
       numero -=1
 
-print (decremento(x)) """
+decremento(x) """
 
 
 
@@ -69,7 +93,7 @@ def iteracion (colores):
 
 
 
-print(iteracion(lista)) """
+iteracion(lista) """
 
 
 
@@ -84,7 +108,7 @@ def iteracion (numero):
     for i in range (numero, valorLimite, 100):
         print (i)
 
-print(iteracion(x)) """
+iteracion(x) """
 
 
 
@@ -105,18 +129,24 @@ valorLimite = 30
 
 def opcional (numero):
 
-    while numero >= valorLimite:
+    while numero <= valorLimite:
 
         if (numero == 4 or numero == 6 or numero == 10 ):
 
             print ("Se saltó el valor de : ", numero)
 
-        elif (numero == 15):
-
-            print ("Se rompió la ejecución cuando valía: ", numero)
+        else: 
+            print ("El valor del bucle es: ", numero)
 
         numero +=1
 
-print(opcional(x))
+    
+        if (numero == 15):
+
+            print ("Se rompió la ejecución cuando valía: ", numero)
+            
+            break                                                      # Se usa para cortar la ejecución 
+
+opcional(x)
         
 
