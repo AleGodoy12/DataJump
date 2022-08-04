@@ -7,8 +7,8 @@ def calcularOcurrencias(texto):
     texto = texto.lower()
     ocurrencias = {}
     lista = texto.split(' ')
-    for letra in lista:
-        ocurrencias[letra] = ocurrencias.get(letra, 0) + 1
+    for palabra in lista:
+        ocurrencias[palabra] = ocurrencias.get(palabra, 0) + 1
     return ocurrencias
 
 def guardarOcurrencias(dic_ocurrencias):
