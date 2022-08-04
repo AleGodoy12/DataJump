@@ -9,6 +9,28 @@ def media(array):
     media=suma/cant
     return media
 
+def varianza(array):
+    numerador=0
+    for i in array:
+        numerador+=(i-media(array))**2
+    varianza=numerador/len(array)
+    return varianza
+
+def desviacionTipica(array):
+    desviacionTipica=varianza(array)**(0.5)
+    return desviacionTipica
+
+diccionario={}
+
+def datos(array):
+    a=media(array)
+    b=varianza(array)
+    c=desviacionTipica(array)
+    diccionario.update({"media":a,"varianza":b,"desviacion tipica":c})
+    return diccionario
+
+lista=[1,2,3,4]
+print(datos(lista))        #prueba
 
 #2. Escribir una función que calcule el máximo común divisor de dos números y otra que calcule el mínimo común múltiplo.
 def mcm(a,b):
@@ -19,14 +41,25 @@ def mcm(a,b):
         i += 1
 
 def mcd(a,b):
-    c=min(a,b)
-    while c>=1:
+    if(a<b):
+        c=a
+    else:
+        c=b
+    while True:
         if (a%c==0 and b%c==0):
             return c
         c -= 1
 
-#3. Escribir un programa que reciba una cadena de caracteres y devuelva un diccionario con cada palabra que contiene y su frecuencia. Escribir otra función que reciba el diccionario generado con la función anterior y devuelva una tupla con la palabra más repetida y su frecuencia.
+print(mcm(2,4))     #prueba
+print(mcd(2,4))
 
+#3. Escribir un programa que reciba una cadena de caracteres y devuelva un diccionario con cada palabra que contiene y su frecuencia. Escribir otra función que reciba el diccionario generado con la función anterior y devuelva una tupla con la palabra más repetida y su frecuencia.
+texto=["Cadena ", " de ", "caracteres", " de ", "prueba"]
+diccionario={}
+for palabra in texto:
+    veces= texto.count(palabra)
+    diccionario.update({palabra:veces})
+print(diccionario)
 
 # #Ejercicios listas y tuplas
 
@@ -34,7 +67,9 @@ def mcd(a,b):
 asignaturas=["Matematicas", "Fisica", "Quimica", "Historia"]
 for materia in asignaturas:
     print("Yo estudio: " + materia)
+    
 #2. Escribir un programa que pregunte al usuario los números ganadores de la lotería primitiva, los almacene en una lista y los muestre por pantalla ordenados de menor a mayor.
+ganador=int(input("Ingrese los 6 numeros ganadores: "))
 
 #3. Escribir un programa que almacene en una lista los siguientes precios, 50, 75, 46, 22, 80, 65, 8, y muestre por pantalla el menor y el mayor de los precios.
 precios=[50, 75, 46, 22, 80, 65, 8]
@@ -59,6 +94,25 @@ edad=int(input("Ingrese su edad: "))
 direccion=input("Ingrese su direccion: ")
 tel=int(input("Ingrese su telefono: "))
 
-diccionario= ["nombre":'nombre',"edad":'edad',"direccion":'direccion',"telefono":'telefono']
+dic= {"nombre":nombre,"edad":edad,"direccion":direccion,"telefono":tel}
+print(dic["nombre"]," tiene ", dic["edad"]," años, vive en ", dic["direccion"],"y su número de teléfono es",dic["telefono"])
+
 #2. Escribir un programa que cree un diccionario vacío y lo vaya llenado con información sobre una persona (por ejemplo nombre, edad, sexo, teléfono, correo electrónico, etc.) que se le pida al usuario. Cada vez que se añada un nuevo dato debe imprimirse el contenido del diccionario.
-dic=[]
+dicc={}
+
+nombre=input("Ingrese su nombre: ")
+dicc.update({"Nombre: ":nombre})
+print(dicc)
+
+edad=int(input("Ingrese su edad: "))
+dicc.update({"Edad: ":edad})
+print(dicc)
+
+sexo=input("Ingrese su sexo biologico: ")
+dicc.update({"Sexo: ":sexo})
+print(dicc)
+
+tel=int(input("Ingrese su telefono: "))
+dicc.update({"Telefono: ":tel})
+print(dicc)
+
