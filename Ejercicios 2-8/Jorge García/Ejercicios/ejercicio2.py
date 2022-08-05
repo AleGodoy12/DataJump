@@ -10,6 +10,10 @@ def calcularMCD(num1, num2):
     if(resto == 0):
         return numMenor
     else:
+        # Algoritmo de Euclides: Si la división no es exacta el resto 
+        # pasa a ser el divisor de la división siguiente
+        # y el divisor actual pasa a ser el dividendo de la división siguiente.
+        # Asi hasta que el resto sea igual a 0.
         dividendo = numMenor
         divisor = resto
         resto = dividendo % divisor

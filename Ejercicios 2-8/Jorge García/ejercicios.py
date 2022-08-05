@@ -1,6 +1,6 @@
 import math
 
-#1 Escribir una función que reciba una muestra de números en una lista y 
+# Escribir una función que reciba una muestra de números en una lista y 
 # devuelva un diccionario con su media, varianza y desviación típica.
 
 def calcularEstadisticas(datos):
@@ -11,7 +11,7 @@ def calcularEstadisticas(datos):
         desvio = pow(i - media, 2)
         sumaDesvios += desvio
     varianza = sumaDesvios/len(datos)
-    desvio = math.sqrt(varianza)
+    desvio = math.sqrt(varianza) #math.sqrt calcula la raiz cuadrada del número pasado por parámetro
     estadisticas["Media"] = media
     estadisticas["Varianza"] = varianza
     estadisticas["Desvio"] = desvio
@@ -20,7 +20,7 @@ def calcularEstadisticas(datos):
 lista = [48, 48, 51, 52, 55, 56, 57, 58, 60, 61]
 print(calcularEstadisticas(lista))
 
-#2 Escribir una función que calcule el máximo común divisor de dos números 
+# Escribir una función que calcule el máximo común divisor de dos números 
 # y otra que calcule el mínimo común múltiplo.
 
 def calcularMCD(num1, num2):
@@ -32,6 +32,10 @@ def calcularMCD(num1, num2):
     if(resto == 0):
         return numMenor
     else:
+        # Algoritmo de Euclides: Si la división no es exacta el resto 
+        # pasa a ser el divisor de la división siguiente
+        # y el divisor actual pasa a ser el dividendo de la división siguiente.
+        # Asi hasta que el resto sea igual a 0.
         dividendo = numMenor
         divisor = resto
         resto = dividendo % divisor
@@ -51,7 +55,7 @@ print("MCD =", resultado)
 resultado = calcularMCM(180, 67)
 print("MCM =", resultado)
 
-#3 Escribir un programa que reciba una cadena de caracteres y 
+# Escribir un programa que reciba una cadena de caracteres y 
 # devuelva un diccionario con cada palabra que contiene y su frecuencia. 
 # Escribir otra función que reciba el diccionario generado con la función anterior 
 # y devuelva una tupla con la palabra más repetida y su frecuencia.
@@ -64,7 +68,7 @@ def calcularOcurrencias(texto):
         ocurrencias[palabra] = ocurrencias.get(palabra, 0) + 1
     return ocurrencias
 
-def guardarOcurrencias(dic_ocurrencias):
+def obtenerPalabraFrecuente(dic_ocurrencias):
     max = 0
     palabra_max = ""
     for clave, valor in dic_ocurrencias.items():
@@ -77,10 +81,10 @@ def guardarOcurrencias(dic_ocurrencias):
 texto = "hola hola como como como como como estas estas estas"
 dic_occurrencias = calcularOcurrencias(texto)
 print(dic_occurrencias)
-tupla_ocurrencias = guardarOcurrencias(dic_occurrencias)
+tupla_ocurrencias = obtenerPalabraFrecuente(dic_occurrencias)
 print(f"Palabra que más se repite: {tupla_ocurrencias}")
 
-#4 Escribir un programa que almacene las asignaturas de un curso 
+# Escribir un programa que almacene las asignaturas de un curso 
 # (por ejemplo Matemáticas, Física, Química, Historia y Lengua) 
 # en una lista y la muestre por pantalla el mensaje Yo estudio <asignatura>, 
 # donde <asignatura> es cada una de las asignaturas de la lista.
@@ -89,15 +93,25 @@ materias = ["Matemáticas", "Física", "Historia", "Química", "Lengua"]
 for asignatura in materias:
     print(f"Yo estudio {asignatura}.")
 
-#5 Escribir un programa que pregunte al usuario los números ganadores de la lotería primitiva, 
+# Escribir un programa que pregunte al usuario los números ganadores de la lotería primitiva, 
 # los almacene en una lista y los muestre por pantalla ordenados de menor a mayor.
 
 numerosGanadores = []
-for i in range(5):
-    numero = int(input("Ingresa un número ganador: "))
-    numerosGanadores.append(numero)
+intentos = 6
+
+while intentos > 0:
+    numero = int(input("Ingresa un número ganador entre 1 y 49: "))
+    if(numero in numerosGanadores):
+        print(f"El número {numero} ya estaba, ingresa otro.")
+        continue
+    if(numero > 0 and numero < 50):
+        numerosGanadores.append(numero)
+        intentos -= 1
+    else:
+        print("Número inválido, debes ingresar un número entre 1 y 49")
+        
 numerosGanadores.sort()
-print(numerosGanadores)
+print(f'Números ganadores: {numerosGanadores}')
 
 #6 Escribir un programa que almacene en una lista los siguientes precios: 50, 75, 46, 22, 80, 65, 8
 # y muestre por pantalla el menor y el mayor de los precios.
@@ -109,7 +123,7 @@ maxPrecio = max(precios)
 print(f"Menor precio: {menorPrecio}")
 print(f"Mayor precio: {maxPrecio}")
 
-#7 Escribir un programa que pregunte al usuario su nombre, edad, dirección y teléfono 
+# Escribir un programa que pregunte al usuario su nombre, edad, dirección y teléfono 
 # y lo guarde en un diccionario. Después debe mostrar por pantalla el mensaje <nombre> tiene <edad> años, 
 # vive en <dirección> y su número de teléfono es <teléfono>.
 
@@ -128,7 +142,7 @@ if(edad > 0 and edad < 100 and nombre.isalpha()):
 else:
     print("Datos inválidos.")
 
-#8 Escribir un programa que cree un diccionario vacío y lo vaya llenado con información sobre una datos 
+# Escribir un programa que cree un diccionario vacío y lo vaya llenado con información sobre una datos 
 # (por ejemplo nombre, edad, sexo, teléfono, correo electrónico, etc.) que se le pida al usuario. 
 # Cada vez que se añada un nuevo dato debe imprimirse el contenido del diccionario.
 

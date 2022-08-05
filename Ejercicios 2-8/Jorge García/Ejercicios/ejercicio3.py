@@ -11,7 +11,7 @@ def calcularOcurrencias(texto):
         ocurrencias[palabra] = ocurrencias.get(palabra, 0) + 1
     return ocurrencias
 
-def guardarOcurrencias(dic_ocurrencias):
+def obtenerPalabraFrecuente(dic_ocurrencias):
     max = 0
     palabra_max = ""
     for clave, valor in dic_ocurrencias.items():
@@ -24,5 +24,5 @@ def guardarOcurrencias(dic_ocurrencias):
 texto = "hola hola como como como como como estas estas estas"
 dic_occurrencias = calcularOcurrencias(texto)
 print(dic_occurrencias)
-tupla_ocurrencias = guardarOcurrencias(dic_occurrencias)
+tupla_ocurrencias = obtenerPalabraFrecuente(dic_occurrencias)
 print(f"Palabra que más se repite: {tupla_ocurrencias}")
