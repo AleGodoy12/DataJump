@@ -6,26 +6,36 @@ def calculos (lista):
  
 #2. Escribir una función que calcule el máximo común divisor de dos números y otra que calcule el mínimo común múltiplo.
 
-num1=200
-num2=150                                 #REVISAR MCM
-
 def mcd(a, b):
-    resto = 0
-    while(b > 0):
-        
-
-    
+    mcd= 1                                         #el 1 es el maximo comun divisor de 2 numeros:1 divide a cualquira
+    if (a % b == 0):
+        return b
+    for i in range(int(b/2), 0, -1):
+        if (a % i == 0 and b % i == 0):            # K es el mcm para "x" y "y"
+            mcd= i
+            break
+    return mcd 
 
 def mcm(a, b):
-    return(a * b) / mcd
-mcm2= mcm (num1, num2)
-print("El máximo común divisor de ", num1," y ", num2," es ", mcd(num1, num2))
-print("El mínimo común múltiplo de ", num1, "y", num2, "es", mcm2)
-
-
+    i=1
+    while True:
+        if (i%a==0 and i%b==0):
+            return i
+        i += 1
+        
+print(mcm(8, 4))
+print(mcd(8, 4))
 
 
 #3. Escribir un programa que reciba una cadena de caracteres y devuelva un diccionario con cada palabra que contiene y su frecuencia. Escribir otra función que reciba el diccionario generado con la función anterior y devuelva una tupla con la palabra más repetida y su frecuencia.
+
+texto= ["Cadena ", "de ", "caracteres ", "de ", "ejemplo"]
+diccionario= {}
+for palabra in texto:
+    cantidad= texto.count(palabra)
+    diccionario.update({palabra:cantidad})
+print(diccionario)
+
 
 #Ejercicios listas y tuplas
 
@@ -77,5 +87,19 @@ print(dicc["nombre"], "tiene", dicc["edad"], "años", "vive en", dicc["direcció
 #8. Escribir un programa que cree un diccionario vacío y lo vaya llenado con información sobre una persona (por ejemplo nombre, edad, sexo, teléfono, correo electrónico, etc.) que se le pida al usuario. Cada vez que se añada un nuevo dato debe imprimirse el contenido del diccionario.
 
 dicc= {}
-seguir= True
-información= input("Ingrese datos personales: ")
+
+nombre= input("Ingrese su nombre: ")
+dicc.update({"nombre":nombre})
+print(dicc)
+
+edad= int(input("Ingrese su edad: "))
+dicc.update({"edad":edad})
+print(dicc)
+    
+sexo= input("Ingrese su sexo: ")
+dicc.update({"Sexo":sexo})
+print(dicc)
+          
+teléfono= int(input("Ingrese su número telefónico: "))
+dicc.update({"Teléfono":teléfono})
+print(dicc)
