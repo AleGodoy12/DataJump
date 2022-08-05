@@ -16,33 +16,65 @@
 
         promedio = suma / cantidad
 
+    return promedio
 
 
-
-        numeroMenosPromedio = i - promedio
-
-        elCuadrado = numeroMenosPromedio * numeroMenosPromedio             #Falta
-
-        sumatoria += elCuadrado
-
-        divisionParaVarianza = elCuadrado / sumatoria
-
-
-
-    print (promedio) 
-
-    print (divisionParaVarianza) """
-      
-      
-
-
+def varianza (ingreseLista): 
     
+    suma = 0
 
+    cantidad = len(ingreseLista)
+
+    for i in ingreseLista:
+
+        suma += i
+        
+        promedio = suma / cantidad
+
+        x = 0
+
+        y = 0
+
+    for j in ingreseLista:
+        
+        numero = j - promedio
+
+        x = numero * numero
+
+        y += x
+
+    return (y/cantidad)
+
+
+def desviacionT (ingreseLista):
+
+    desviacionTipica = varianza (ingreseLista)** 0.5
+
+    return desviacionTipica
+
+diccionario = {}
+
+def ingresoDatos (ingresoLista):
+
+    a = numeroLista (ingresoLista)
+    b = varianza (ingresoLista)
+    c = desviacionT (ingresoLista)
+
+    diccionario.update({"numeriLista": a, "varianza": b , "desviacionTipica": c})
+
+    print (diccionario)
+
+ingresoDatos ([2, 4, 6, 8]) """
+
+
+      
 
 
 # Escribir una función que calcule el máximo común divisor de dos números y otra que calcule el mínimo común múltiplo.
 
 """ MCD = El número más grande que divide dos números  """
+
+
 
 """ x = int(input("Escriba el primer número: "))
 
@@ -58,17 +90,53 @@ def mcd (numero1, numero2):
 
     for k in range (int(y/2), 0, -1):
 
-        if x %k == 0 and y % k == 0:
+        if x % k == 0 and y % k == 0:
 
             numero = k
 
-            break """                    #Falta
+            break
+    
+    return numero
+
+print (mcd(4, 8)) """
+
+
+
+
+""" def mcm(x , y):
+
+    z = max (x, y)
+
+    while True:
+
+        if (z % x == 0 ) and (z % y == 0):
+
+            return z 
+
+        z +=1
+
+print (mcm(2, 4)) """
+
+
+
+
+
+
 
 
 
 # Escribir un programa que reciba una cadena de caracteres y devuelva un diccionario con cada palabra que contiene y su frecuencia. Escribir otra  función que reciba el diccionario generado con la función anterior y devuelva una tupla con la palabra más repetida y su frecuencia.
 
-""" cadena = str ( input ("Escribir una palabra:")) """
+""" cadena = ["Hola", "chau", "Hola", "Nos vemos"]
+
+diccionario = {}
+
+for i in cadena:
+    repetido = cadena.count(i)
+    diccionario.update({i:repetido})
+
+print(diccionario) """
+
 
 
 
@@ -89,12 +157,22 @@ for i in range (len(lista)):
 
 # Escribir un programa que pregunte al usuario los números ganadores de la lotería primitiva, los almacene en una lista y los muestre por pantalla ordenados de menor a mayor.
 
+""" ganadores= input("Ingrese los números de la lotería: ")
+
+listaVacia= []
+
+for i in ganadores:
+    
+    listaVacia= sorted(ganadores)
+
+print(listaVacia) """
+
 
 
 
 # Escribir un programa que almacene en una lista los siguientes precios, 50, 75, 46, 22, 80, 65, 8, y muestre por pantalla el menor y el mayor de los precios.
 
-precios = [ 50, 75, 46, 22, 80, 65, 8]
+""" precios = [ 50, 75, 46, 22, 80, 65, 8]
 
 menor = precios [0]
 mayor = precios [0]
@@ -109,7 +187,7 @@ for i in precios:
 
 print ("El menor precio es: ", menor)
 
-print("El mayor precio es: ", mayor )
+print("El mayor precio es: ", mayor ) """
 
 
 
@@ -122,3 +200,22 @@ print("El mayor precio es: ", mayor )
 
 
 # Escribir un programa que cree un diccionario vacío y lo vaya llenado con información sobre una persona (por ejemplo nombre, edad, sexo, teléfono, correo electrónico, etc.) que se le pida al usuario. Cada vez que se añada un nuevo dato debe imprimirse el contenido del diccionario.
+
+
+""" diccionario={}
+
+nombre=input("Ingrese su nombre: ")
+diccionario.update({"Nombre: ":nombre})
+
+
+apellido=input("Ingrese su apellido: ")
+diccionario.update({"Apellido: ":apellido})
+
+edad=int(input("Ingrese su edad: "))
+diccionario.update({"Edad: ":edad})
+
+
+print(diccionario) """
+
+
+
