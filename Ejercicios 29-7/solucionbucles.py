@@ -1,26 +1,26 @@
-#1.- Crea un bucle while que se ejecute hasta que x valga 15 con incrementos de 5
+# #1.- Crea un bucle while que se ejecute hasta que x valga 15 con incrementos de 5
 
-x = 0
+# x = 0
 
-while x <= 15:
-	print(x)
-	x += 5
+# while x <= 15:
+# 	print(x)
+# 	x += 5
 
-#2.- Crea un bucle while que se ejecute hasta que x valga -100 con decrementos de 20.
+# #2.- Crea un bucle while que se ejecute hasta que x valga -100 con decrementos de 20.
 
-x = 0
+# x = 0
 
-while x >= -100:
-	print(x)
-	x -= 20
+# while x >= -100:
+# 	print(x)
+# 	x -= 20
 
-#3.- Crea un bucle while que se ejecute hasta que x valga 0 con decrementos de 1 y que muestre en cada ejecución esta frase con el valor de ejecución correspondiente: 'El valor del bucle es 10'...
+# #3.- Crea un bucle while que se ejecute hasta que x valga 0 con decrementos de 1 y que muestre en cada ejecución esta frase con el valor de ejecución correspondiente: 'El valor del bucle es 10'...
 
-x = 10
+# x = 10
 
-while x >= 0:
-	print('El valor de x es: ', x)
-	x -= 1
+# while x >= 0:
+# 	print('El valor de x es: ', x)
+# 	x -= 1
 
 #4.- Crea un bucle for que itere la siguiente tupla y muestre una frase como esta en cada iteración: 'El color es: ' + color + '.'
 
@@ -31,8 +31,8 @@ for x in colores:
 
 
 #5.- Crea un bucle for con un range() que vaya desde el valor 7 hasta el valor 700 en saltos de 100. Basta con que imprimas el valor de cada iteración.
-for x in range(7, 700, 100):
-	print(x)
+# for x in range(0, 700, 100):
+# 	print(x)
 
 # -Opcional-
 
@@ -47,22 +47,22 @@ for x in range(7, 700, 100):
 # Cuando se rompa la ejecución del bucle deberás mostrar un mensaje indicándolo: 'Se rompió la ejecución del bucle cuando x valía ' + x **
 
 
-# Valor inicial de x
-x = 0
+# # Valor inicial de x
+# x = 0
 
-# while se ejecuta hasta menor o igual que 30
-while x <= 30:
-	x += 1  # incrementos de 1
+# # while se ejecuta hasta menor o igual que 30
+# while x <= 30:
+# 	x += 1  # incrementos de 1
 
-	# if para saltar ejecuciones del bucle
-	if x == 4 or x == 6 or x == 10:
-		print('Se saltó el valor ', x, ' de x')
-		continue
+# 	# if para saltar ejecuciones del bucle
+# 	if x == 4 or x == 6 or x == 10:
+# 		print('Se saltó el valor ', x, ' de x')
+# 		continue
 
-	# if para romper la ejecución del bucle
-	if x == 15:
-		print('Se rompió la ejecución del bucle cuando x valía: ', x)
-		break
+# 	# if para romper la ejecución del bucle
+# 	if x == 15:
+# 		print('Se rompió la ejecución del bucle cuando x valía: ', x)
+# 		break
 
-	# imprime los resultados que no se corresponden a ninguno de los if
-	print(x)
+# 	# imprime los resultados que no se corresponden a ninguno de los if
+# 	print(x)
