@@ -26,9 +26,34 @@ def varios(lista):
 print(varios(lista))
 
 # Escribir una función que calcule el máximo común divisor de dos números y otra que calcule el mínimo común múltiplo.
+def mcd(a,b):
+    c=max(a,b)
+    while True:
+        if (a%c==0 and b%c==0):
+            return c
+        c -= 1
+        
+print(mcd(13,1))
+
+def mcm(a,b):
+    c= max(a,b)
+    while True:
+        if (c % a == 0) and (c % b == 0):
+            return c
+        c+=1
 
 # Escribir un programa que reciba una cadena de caracteres y devuelva un diccionario con cada palabra que contiene y su frecuencia. Escribir otra función que reciba el diccionario generado con la función anterior y devuelva una tupla con la palabra más repetida y su frecuencia.
+cadena=("Este es un ejemplo ejemplo ejemplo")
 
+cadena="este es es unn ejemplo es este"
+def ej1(cadena):
+    nuevo=cadena.split() 
+    dicc={}
+    for i in nuevo:
+        cant= cadena.count(i)
+        dicc[i]=cant
+    return dicc
+print(ej1(cadena))
 
 #Ejercicios listas y tuplas
 
