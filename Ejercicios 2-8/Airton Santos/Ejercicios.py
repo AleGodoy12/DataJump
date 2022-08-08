@@ -17,12 +17,11 @@ def calculos(lista):
 
     print (media, varianzaNum, varianzaResultado)
 
-
-
 calculos([1500 , 1200 , 1700 , 1300 , 1800])
 
 
 
+#2.- Escribir una función que calcule el máximo común divisor de dos números y otra que calcule el mínimo común múltiplo.
 
 
 # #3. Escribir un programa que reciba una cadena de caracteres y devuelva un diccionario con cada palabra que contiene y su frecuencia. 
@@ -47,7 +46,10 @@ def tupla ():
 
     maximoValor = max(resultadoDic, key = resultadoDic.get)
 
-    print(maximoValor)
+    tuplaResultado = ( "Palabra más repetida :", maximoValor, "Frecuencia: ", resultadoDic[maximoValor])
+
+    print(tuplaResultado)
+
 tupla()   
 
 
@@ -87,7 +89,8 @@ def precios ():
     precioMaximo = max(listaPrecios)
     precioMinimo = min(listaPrecios)
 
-    print(f"El mayor precio es {precioMaximo}")    print(f"El menor precio es {precioMinimo}")
+    print(f"El mayor precio es {precioMaximo}")    
+    print(f"El menor precio es {precioMinimo}")
 
 precios()
 
@@ -115,24 +118,14 @@ def infoUsuario ():
 # Cada vez que se añada un nuevo dato debe imprimirse el contenido del diccionario.
 
 def programaUsuario():
+    dicVacio = {}
 
-    dic4 = {}
-    i = 0
+    while True:
+        tipoDato = input("Ingrese un tipo dato que quiera rellenar")
+        dato = input("Ingrese el dato")
 
-    while i < 3:
-        nombre = input("Ingrese su nombre")
-        dic4["Nombre"] = nombre
-        print(dic4)
-        i += 1
+        dicVacio.update({tipoDato:dato})
 
-        edad = int(input("Ingrese su edad"))
-        dic4["Edad"] =dad
-        print(dic4)
-        i += 1
-
-        telefono = int(input("Ingrese su telefono"))
-        dic4["Telefono"] = telefono
-        print(dic4)
-        i += 1
+        print(dicVacio)
 
 programaUsuario()
