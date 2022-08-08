@@ -1,20 +1,28 @@
 #FUNCIONES
-#1 Escribir una función que reciba una muestra de números en una lista y devuelva 
-# un diccionario con su media, varianza y desviación típica.
+#1 
 dicc = {}
-lista = []
-def calculos (lista):
-    suma = sum(lista)
-    longitud = len(lista)
-    media = suma / longitud
-    varianza = (media / i)
+array = [10,15,25]
+def media (array):
+    prom = sum(array)/len(array)
+    return prom
 
+def var (array):
+    calculo = 0 
+    for i in array:
+        calculo += ((i - media(array)) **2)
+    varianza = (calculo / len(array))
+    return varianza
 
-#2 Escribir una función que calcule el máximo común divisor de dos números y otra que 
-# calcule el mínimo común múltiplo.
+def desviacionT (array):
+    des = var(array)**0.5 
+    return des
 
-num = 1
-num2 = 2
+dicc['Media'] = media(array)
+dicc['Varianza'] = var(array)
+dicc['Desviación Típica'] = desviacionT(array)
+print(dicc)
+
+#2 
 def mcd (a, b):
     i=0
     while True:
@@ -47,20 +55,44 @@ print(dicc)
 
 
 #EJERCICIOS Y TUPLAS
-
-#4 Escribir un programa que almacene las asignaturas de un curso 
-# (por ejemplo Matemáticas, Física, Química, Historia y Lengua) en una lista y 
-# la muestre por pantalla el mensaje Yo estudio , donde es cada una de las asignaturas de la lista.
+#4
 materias = ["Matemáticas", "Física", "Química", "Historia" , "Lengua"]
 for i in materias:
     print('Yo estudio', i, 'en la posición' , materias.index(i))
 
-
-# 5 Escribir un programa que pregunte al usuario los números ganadores de la lotería primitiva, los almacene en una lista y los muestre por pantalla ordenados de menor a mayor.
+# 5 
 numGanadores = int(input('Decime los 6 números ganadores de la lotería'))
+numSeparados = numGanadores.split()
+numSeparados.sort()
+print(numSeparados)
 
+#6 
+precios = [ 50, 75, 46, 22, 80, 65, 8]
+print(min(precios), max(precios))
 
+#EJERCICIOS DICCIONARIOS
+#7
+dicc = {}
+nombre = input('Ingresá tu nombre')
+edad = input('Ingresá tu edad')
+direccion = input('Ingresá tu dirección')
+telefono = input('Ingresá tu teléfono')
 
+dicc['Nombre'] = nombre
+dicc['Edad'] = edad
+dicc['Dirección'] = direccion
+dicc['Telefono'] = telefono
+print(dicc)
 
+#8
 
+dicc = {}
+i = 1
+info = '?'
+dato = '?'
 
+while (i != 0):
+    info = input('Información a ingresar')
+    dato = input('El dato respectivo de la información agregada')
+    dicc[info]=dato
+    print(dicc)
